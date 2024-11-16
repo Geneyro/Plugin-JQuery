@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="css/compra.css">
+
+</head>
+<body>
+    <header>
+        <h1>Formulario de Compra</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listado_tabla.html">Lista de Productos (Tabla)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="confirmacion.html" method="POST">
+            <p>Nombre del Cliente:<br><input type="text" name="nombre" required></p>
+            <p>Dirección:<br><input type="text" name="direccion" required></p>
+            <p>Teléfono:<br><input type="tel" name="telefono" required></p>
+            <p>Email:<br><input type="email" name="email" required></p>
+            <p>Medio de Pago:<br>
+                <select name="pago" required>
+                    <option value="tarjeta">Tarjeta de Crédito</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                </select>
+            </p>
+            <p>Listado de Productos:<br>
+                <textarea name="productos" required></textarea>
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

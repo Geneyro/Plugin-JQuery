@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+}
+header .logo {
+    height: 200px;
+    margin-right: 20px;
+}
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #ff5722;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header .logo {
+        margin-bottom: 20px;
+    }
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ff5722;
+    text-decoration: none;
+}
+main {
+    padding: 40px;
+    text-align: center;
+}
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+.carousel button {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    margin-top: -22px;
+    z-index: 100;
+    border-radius: 3px;
+    font-size: 24px;
+}
+.carousel .prev {
+    left: 10px;
+}
+.carousel .next {
+    right: 10px;
+}
+.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}

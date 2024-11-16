@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GL Detail - Servicio de Limpieza Detallada de Vehículos a Domicilio</title>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Estilos de Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <img src="img/gldetail.png" alt="Logo GL Detail" class="logo">
+        <div class="header-text">
+            <h1>GL Detail</h1>
+            <p class="subtitle">Servicio de limpieza detallada de vehículos a domicilio</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Vehiculo.html">Vehículo</a></li>
+                <li><a href="servicios.html">Servicio</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bienvenidos a GL Detail</h2>
+        <p>Servicio de limpieza detallada de vehículos a domicilio.</p>        
+        <!-- Estructura del carrusel -->
+        <div class="carousel">
+            <img src="img/1.jpeg" alt="Foto 1">
+            <img src="img/2.jpeg" alt="Foto 2">
+            <img src="img/3.jpeg" alt="Foto 3">
+            <img src="img/4.jpeg" alt="Foto 4">
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Síguenos en 
+            <a href="https://www.instagram.com/lautarogeneyro/?hl=es-la" target="_blank" class="instagram-link">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </p>
+    </footer>    
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Inicialización de Slick -->
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: true
+            });
+        });
+    </script>
+</body>
+</html>
